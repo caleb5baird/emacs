@@ -67,6 +67,8 @@ body{
     padding:1.618em 3.236em;
 }
 
+#content.with-table-of-contents {margin-left: 300px;}
+
 p{
     font-size:16px;
     line-height:24px;
@@ -198,11 +200,9 @@ dl dd{
 }
 
 @media print{
-    #postamble{
-        display:none}
+    #postamble{display:none}
 
-    #content{
-        margin-left:0}
+    #content{margin-left:0}
 }
 
 @media print{
@@ -218,10 +218,12 @@ dl dd{
 }
 
 @media screen and (max-width: 768px){
+    #content.with-table-of-contents {
+        margin: auto;
+    }
 }
 
-@media only screen and (max-width: 480px){
-}
+@media only screen and (max-width: 480px){}
 
 @media screen and (max-width: 768px){
     .tablet-hide{
