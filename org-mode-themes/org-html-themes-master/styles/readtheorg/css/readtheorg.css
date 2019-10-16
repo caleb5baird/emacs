@@ -429,7 +429,6 @@ table tr:nth-child(2n) td{
     }
 
     #toggle-sidebar {
-        background-color: #2980B9;
         display: block;
         margin-bottom: 1.6em;
         padding: 0.6em;
@@ -596,10 +595,16 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
     margin-bottom:0px}
 
 #content .danger,#content .error{
-    background:#fdf3f2}
+    background:#fdf3f2;}
 
 .wy-alert.wy-alert-warning,#content .wy-alert-warning.note,#content .attention,#content .caution,#content .wy-alert-warning.danger,#content .wy-alert-warning.error,#content .wy-alert-warning.hint,#content .wy-alert-warning.important,#content .wy-alert-warning.tip,#content .warning,#content .wy-alert-warning.seealso,#content .admonitiontodo{
-    background:#ffedcc}
+    background:#ffedcc;}
+
+#content div.question, #content div.answer, #content div.info {padding: 12px; margin-bottom: 5px;}
+#content div.question {background: #ffece0;}
+#content div.answer {background: #e8ffee;}
+#content div.info {background: #ededed;}
+#content p.admonition-title { margin: -12px -12px 0 -12px;}
 
 #content .admonition-title.note:before, #content .admonition-title.seealso:before,
 #content .admonition-title.warning:before, #content .admonition-title.caution:before,
@@ -623,9 +628,24 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 #content .important,#content .tip,#content .hint{
     background:#dbfaf4}
 
-#content .admonition-title.note,#content .admonition-title.seealso{
+#content .admonition-title.note,
+#content .admonition-title.seealso{
     line-height: 1;
     background:#6ab0de}
+
+#content .admonition-title.info{
+    line-height: 1;
+    background:#c4c4c4}
+
+#content .admonition-title.question{
+    line-height: 1;
+    background:#dead6d;
+}
+
+#content .admonition-title.answer{
+    line-height: 1;
+    background:#65bf7d;
+}
 
 #content .admonition-title.warning,#content .admonition-title.caution,#content .admonition-title.attention{
     line-height: 1;

@@ -1,14 +1,43 @@
+
 $(function() {
-    $('.note').before("<p class='admonition-title note'>Note</p>");
-    $('.seealso').before("<p class='admonition-title seealso'>See also</p>");
-    $('.warning').before("<p class='admonition-title warning'>Warning</p>");
-    $('.caution').before("<p class='admonition-title caution'>Caution</p>");
-    $('.attention').before("<p class='admonition-title attention'>Attention</p>");
-    $('.tip').before("<p class='admonition-title tip'>Tip</p>");
-    $('.important').before("<p class='admonition-title important'>Important</p>");
-    $('.hint').before("<p class='admonition-title hint'>Hint</p>");
-    $('.error').before("<p class='admonition-title error'>Error</p>");
-    $('.danger').before("<p class='admonition-title danger'>Danger</p>");
+    $('div.info:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title info'>Info</p>");
+
+    $('div.question:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title question'>Question</p>");
+
+    $('div.answer:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title answer'>Answer</p>");
+
+    $('div.note:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title note'>Note</p>");
+
+    $('.seealso:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title seealso'>See also</p>");
+
+    $('.warning:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title warning'>Warning</p>");
+
+    $('.caution:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title caution'>Caution</p>");
+
+    $('.attention:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title attention'>Attention</p>");
+
+    $('.tip:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title tip'>Tip</p>");
+
+    $('.important:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title important'>Important</p>");
+
+    $('.hint:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title hint'>Hint</p>");
+
+    $('.error:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title error'>Error</p>");
+
+    $('.danger:not(:has(p.admonition-title))')
+        .prepend("<p class='admonition-title danger'>Danger</p>");
 });
 
 $( document ).ready(function() {
