@@ -876,13 +876,13 @@ hr{
     margin-bottom:0.809em;
 }
 
-ul.nav li ul li {display: none;}
+ul.nav ul {transition: max-height 2s ease;}
 
-ul.nav li ul li ul li {display: none;}
+ul.nav li ul {max-height: 0; overflow: hidden;}
+ul.nav li.active ul {max-height: 200vh;}
 
-ul.nav li.active ul li {display: inline;}
-
-ul.nav li.active ul li ul li {display: inline;}
+ul.nav li.active ul li ul {max-height: 0; overflow: hidden;}
+ul.nav li.active ul li.active ul {max-height: 100vh;}
 
 ul.nav li.active ul li a {
     background-color: #E3E3E3;
