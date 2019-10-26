@@ -111,4 +111,16 @@ window.SphinxRtdTheme = (function (jquery) {
 
 $(document).ready(()=> {
     $('#content:has(div#table-of-contents)').addClass('with-table-of-contents');
-})
+});
+
+$( document ).ready(function() {
+    $('h1, h2, h3, h4, h5').click((element)=>{
+        var currentElement = element.currentTarget;
+        currentElement.classList.toggle('collapsed');
+        currentElement = currentElement.nextElementSibling;
+        while (currentElement) {
+            $(currentElement).slideToggle();
+            currentElement = currentElement.nextElementSibling;
+        }
+    });
+});

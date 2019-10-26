@@ -40,6 +40,14 @@ h4,h5,h6{
     font-weight:300;
 }
 
+h2.collapsed:after,
+h3.collapsed:after,
+h4.collapsed:after,
+h5.collapsed:after,
+h6.collapsed:after {
+    content: ' ▾';
+}
+
 html{
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
