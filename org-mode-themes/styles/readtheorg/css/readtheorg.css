@@ -652,14 +652,31 @@ a .fa,a #content .admonition-title,#content a .admonition-title{
 #content div.info {background: #ededed;}
 #content p.admonition-title { margin: -12px -12px 0 -12px;}
 
-#content .admonition-title.note:before, #content .admonition-title.seealso:before,
-#content .admonition-title.warning:before, #content .admonition-title.caution:before,
+#content .admonition-title.note:before,
+#content .admonition-title.seealso:before,
+#content .admonition-title.warning:before,
+#content .admonition-title.caution:before,
 #content .admonition-title.attention:before,
-#content .admonition-title.tip:before, #content .admonition-title.hint:before,
+#content .admonition-title.tip:before,,
 #content .admonition-title.important:before,
 #content .admonition-title.error:before, #content .admonition-title.danger:before{
     font-family:FontAwesome;
     content: "";
+}
+
+#content .admonition-title.question:before{
+    font-family:FontAwesome;
+    content: '?\20DD';
+}
+
+#content .admonition-title.answer:before{
+    font-family:FontAwesome;
+    content: '\272e';
+}
+
+#content .admonition-title.hint:before {
+    font-family:FontAwesome;
+    content: '\1F50D';
 }
 
 #content .note,#content .seealso{background:#e7f2fa}
